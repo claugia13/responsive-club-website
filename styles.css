@@ -1,0 +1,173 @@
+* {
+    border: 2px solid turquoise;
+}
+
+/*** Universal Styles ***/
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+/*** Header Section ***/
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+li {
+    list-style: none;
+    padding: 0.8em;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    border: 2px solid red;
+}
+
+.logo {
+    height: 100px;
+    margin: auto;
+}
+
+.flag {
+    height: 50px;
+    padding-left: 0.5em;
+}
+
+nav {
+    margin-left: auto;
+    margin: auto;
+    height: fit-content;
+
+}
+
+ul {
+    display: inline-flex;
+}
+
+/******* Main Section *******/
+
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    'banner banner banner'
+    'testimonial calendar buttons'
+    'image image image'
+    'contact form form'
+    'footer footer footer'
+}
+*/
+
+/*** Banner Section ***/
+
+.banner {
+    background-image: url("images/backpacker-group-dirt-trail.jpeg");
+    min-height: 900px;
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex: 1 2 900px;
+    justify-content: center;
+    
+}
+
+.quote {
+    background-color: gray;
+    color: orange;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Courgette', cursive;
+    margin-top: 4em;
+    margin-bottom: auto;
+    width: 100%;
+
+}
+
+/*** Events Section ***/
+
+#events {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 'testimonial calendar buttons'
+}
+
+.testimonials {
+    grid-area: testimonial;
+    background-color: skyblue;
+    padding: 1em;
+
+}
+.calendar {
+    grid-area: calendar;
+}
+
+.buttons {
+    grid-area: buttons;
+}
+
+/*** Image Gallery Section ***/
+
+#image-gallery {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.5em;
+    grid-template-areas: 
+    'img1 img1 img2 img2 img3 img4 img4'
+    'img5 img5 img6 img6 img3 img7 img7'
+    '. . img8 img8 img9 img9 .'
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid orange;
+}
+
+.gallery .item1 {
+    grid-area: img1;
+}
+
+.gallery .item2 {
+    grid-area: img2;
+}
+
+.gallery .item3 {
+    grid-area: img3;
+}
+
+.gallery .item4 {
+    grid-area: img4;
+}
+
+.gallery .item5 {
+    grid-area: img5;
+}
+
+.gallery .item6 {
+    grid-area: img6;
+}
+
+.gallery .item7 {
+    grid-area: img7;
+}
+
+.gallery .item8 {
+    grid-area: img8;
+}
+
+.gallery .item9 {
+    grid-area: img9;
+}
+
