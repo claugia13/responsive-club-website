@@ -7,7 +7,13 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+body {
     width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    
 }
 
 /*** Header Section ***/
@@ -51,7 +57,11 @@ ul {
 }
 
 /******* Main Section *******/
-
+main {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
 
 /*** Banner Section ***/
 
@@ -85,16 +95,17 @@ ul {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 2fr 1fr;
+    gap: 10px;
     grid-template-areas: 'testimonial1 testimonial2 calendar'
 }
 
 .testimonial {
     background-color: skyblue;
-    padding: 1em;
     width: 100%;
 }
 
 .testimonial img {
+    display: block;
     width: 150px;
     height: auto;
     border: 2px solid red;
@@ -120,63 +131,73 @@ ul {
 /*** Image Gallery Section ***/
 
 #image-gallery {
+    width: 100%;
+    height: 100%;
     display: grid;
     border: 2px solid purple;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(10, 1fr);
-    gap: 10px;
-    grid-template-areas: 
-    'img1 img1 img2 img2 img2 img3 img3 img4 img4 img4'
-    'img1 img1 img2 img2 img2 img3 img3 img4 img4 img4'
-    'img5 img5 img2 img2 img2 img3 img3 img9 img9 img9'
-    'img5 img5 img7 img7 img8 img8 img8 img9 img9 img9'
-    'img6 img6 img7 img7 img8 img8 img8 img9 img9 img9'
-    'img6 img6 img7 img7 img8 img8 img8 img9 img9 img9';
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 200px 300px;
+    gap: 15px;
+    grid-auto-flow: dense;
+    
 }
 .gallery {
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 .gallery-img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 50%;
     border: 2px solid orange;
 }
 
 .gallery.item1 {
-    grid-area: img1;
+    grid-column: span 2;
+    grid-row: span 2;
     border: 2px solid red;
 }
 
 .gallery.item2 {
-    grid-area: img2;
+    grid-column: span 3;
+    grid-row: span 1;
 }
 
 .gallery.item3 {
-    grid-area: img3;
+    grid-column: span 3;
+    grid-row: span 2;
 }
 
 .gallery.item4 {
-    grid-area: img4;
+    grid-column: span 3;
+    grid-row: span 1;
 }
 
 .gallery.item5 {
-    grid-area: img5;
+    grid-column: span 3;
+    grid-row: span 1;
 }
 
 .gallery.item6 {
-    grid-area: img6;
+    grid-column: span 3;
+    grid-row: span 2;
 }
 
 .gallery.item7 {
-    grid-area: img7;
+    grid-column: span 2;
+    grid-row: span 1;
 }
 
 .gallery.item8 {
-    grid-area: img8;
+    grid-column: span 3;
+    grid-row: span 1;
 }
 
 .gallery.item9 {
-    grid-area: img9;
+    grid-column: span 2;
+    grid-row: span 1;
 }
 
