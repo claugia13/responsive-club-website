@@ -52,19 +52,6 @@ ul {
 
 /******* Main Section *******/
 
-/*
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    'banner banner banner'
-    'testimonial calendar buttons'
-    'image image image'
-    'contact form form'
-    'footer footer footer'
-}
-*/
 
 /*** Banner Section ***/
 
@@ -97,77 +84,99 @@ ul {
 #events {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-areas: 'testimonial calendar buttons'
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas: 'testimonial1 testimonial2 calendar'
 }
 
-.testimonials {
-    grid-area: testimonial;
+.testimonial {
     background-color: skyblue;
     padding: 1em;
-
+    width: 100%;
 }
+
+.testimonial img {
+    width: 150px;
+    height: auto;
+    border: 2px solid red;
+    margin: auto;
+} 
+
+.testimonial.item1 {
+    grid-area: testimonial1;
+}
+
+.testimonial.item2 {
+    grid-area: testimonial2;
+}
+
 .calendar {
     grid-area: calendar;
 }
 
 .buttons {
-    grid-area: buttons;
+    grid-area: calendar;
 }
 
 /*** Image Gallery Section ***/
 
 #image-gallery {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 0.5em;
+    border: 2px solid purple;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
     grid-template-areas: 
-    'img1 img1 img2 img2 img3 img4 img4'
-    'img5 img5 img6 img6 img3 img7 img7'
-    '. . img8 img8 img9 img9 .'
+    'img1 img1 img2 img2 img2 img3 img3 img4 img4 img4'
+    'img1 img1 img2 img2 img2 img3 img3 img4 img4 img4'
+    'img5 img5 img2 img2 img2 img3 img3 img9 img9 img9'
+    'img5 img5 img7 img7 img8 img8 img8 img9 img9 img9'
+    'img6 img6 img7 img7 img8 img8 img8 img9 img9 img9'
+    'img6 img6 img7 img7 img8 img8 img8 img9 img9 img9';
 }
-
-.gallery-img {
+.gallery {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+}
+.gallery-img {
+    max-width: 100%;
+    max-height: 100%;
     border: 2px solid orange;
 }
 
-.gallery .item1 {
+.gallery.item1 {
     grid-area: img1;
+    border: 2px solid red;
 }
 
-.gallery .item2 {
+.gallery.item2 {
     grid-area: img2;
 }
 
-.gallery .item3 {
+.gallery.item3 {
     grid-area: img3;
 }
 
-.gallery .item4 {
+.gallery.item4 {
     grid-area: img4;
 }
 
-.gallery .item5 {
+.gallery.item5 {
     grid-area: img5;
 }
 
-.gallery .item6 {
+.gallery.item6 {
     grid-area: img6;
 }
 
-.gallery .item7 {
+.gallery.item7 {
     grid-area: img7;
 }
 
-.gallery .item8 {
+.gallery.item8 {
     grid-area: img8;
 }
 
-.gallery .item9 {
+.gallery.item9 {
     grid-area: img9;
 }
 
