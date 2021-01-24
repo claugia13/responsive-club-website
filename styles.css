@@ -91,12 +91,14 @@ main {
 
 /*** Events Section ***/
 
-#events {
+#testimonials {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 100px; 1fr;
     grid-template-columns: 2fr 2fr 1fr;
     gap: 10px;
-    grid-template-areas: 'testimonial1 testimonial2 calendar'
+    grid-template-areas:
+    'title title event'
+    'testimonial1 testimonial2 calendar'
 }
 
 .testimonial {
@@ -111,6 +113,14 @@ main {
     border: 2px solid red;
     margin: auto;
 } 
+
+#testimonials h2 {
+    grid-area: title;
+}
+
+#events h2 {
+    grid-area: event;
+}
 
 .testimonial.item1 {
     grid-area: testimonial1;
