@@ -69,19 +69,19 @@
         <div id="image-gallery">
             <h2>Image Gallery</h2>
             <figure class="gallery item1">
-                <img class="gallery-img" src="images/camping-tent-stars.jpeg" alt="">
+                <img class="gallery-img" src="images/camping-tent-stars.jpeg" alt="tents glowing under starry night sky">
 
             </figure>
             <figure class="gallery item2">
-                <img class="gallery-img" src="images/group-hiking-fog.jpeg" alt="">
+                <img class="gallery-img" src="images/group-hiking-fog.jpeg" alt="group of backpackers hiking over rocky terrain in heavy fog">
 
             </figure>
             <figure class="gallery item3">
-                <img class="gallery-img" src="images/hikers-mountain-clouds.jpeg" alt="">
+                <img class="gallery-img" src="images/hikers-mountain-clouds.jpeg" alt="two backpackers hiking on trail with vista of snowcapped mountains ahead">
 
             </figure>
             <figure class="gallery item4">
-                <img class="gallery-img" src="images/hiker-group-silhouette.jpeg">
+                <img class="gallery-img" src="images/hiker-group-silhouette.jpeg" alt="silhoutte of backpackers taking a break on a pass at sundown">
 
             </figure>
             <figure class="gallery item5">
@@ -104,6 +104,51 @@
                 <img class="gallery-img" src="images/group-hiking-rocky.jpeg" alt="">
 
             </figure>
+        </div>
+
+        <!-- Join Now Section-->
+        <div>
+            <h2>Become a Part of Our Community!</h2>
+            <p>To join our community and be added to our e-mail list please share your info below:</p>
+            <form>
+                <fieldset>
+                    <legend>
+                        Your Details:
+                    </legend>
+                    <label>
+                        Name:
+                        <input type="text" name="name">
+                    </label>
+                    <br/>
+                    <label>
+                        Email:
+                        <input type="email" name="email">
+                    </label>
+                    <p>Would you like to be added to our e-mail list to stay tuned about upcoming adventures?</p>
+                    <input type="radio" name="email-list" value="yes">Yes, Absolutely!
+                    <input type="radio" name="email-list" value="no">No, thanks.  I'm not ready for adventure.
+                    <br/>
+                    <p>How did you hear about us?</p>
+                    <select name="choices">
+                        <option value="friend/co-worker">Friend/Co-worker</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="web-search">Web Search</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br/>
+                    <p>What is your backpacking experience level?</p>
+                    <select name="experience">
+                        <option value="none">None - Little to no experience hiking or camping.</option>
+                        <option value="beginner">Beginner - I have been camping and hiking before but don't go very often (or it's been a while for me).</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                    <p>Comments!</p>
+                    <textarea name="contact-us" >Enter your comments, questions, concerns, etc. here</textarea>
+                    <br/>
+                    <input type="submit" name="submit" value="Submit">
+                </fieldset>
+            </form>
         </div>
 
     </main>
