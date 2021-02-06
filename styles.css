@@ -24,6 +24,10 @@ h1 {
     font-size: 2.5em;
 }
 
+h2 {
+    font-size: 1.75em;
+}
+
 li {
     list-style: none;
     padding: 0.8em;
@@ -93,7 +97,7 @@ main {
 
 #testimonials {
     display: grid;
-    grid-template-rows: 100px; 1fr;
+    grid-template-rows: 50px; 1fr;
     grid-template-columns: 2fr 2fr 1fr;
     gap: 10px;
     grid-template-areas:
@@ -214,3 +218,8 @@ margin: auto;
     grid-row: span 2;
 }
 
+/*** Footer Section ***/
+
+.icons img {
+    height: 50px;
+}
